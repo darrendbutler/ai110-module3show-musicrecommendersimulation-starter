@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph INPUT["INPUT: User Preferences"]
+        A["User profile<br/>favorite_genre, favorite_mood,<br/>target_energy, target_valence,<br/>target_acousticness, target_danceability"]
+        B[("data/songs.csv<br/>20 songs")]
+        K["k = number of recommendations"]
+    end
+
+    A --> C
+    B --> C["Load all songs into a list of Song records"]
+
+    subgraph PROCESS["PROCESS: The Loop (judge every song)"]
+        C --> D{"More songs<br/>to score?"}
+        D -- Yes --> E["Take next song"]
+        E --> F["Categorical points (exact match only)<br/>mood match: 25<br/>genre match: 15"]
+        F --> G["Numeric closeness points<br/>1 - abs(song - target) x weight<br/>energy 30, valence 10,<br/>acousticness 10, danceability 5,<br/>tempo 5 (scaled to 0-1)"]
+        G --> H["Sum into total score (0-100)<br/>and record reasons<br/>e.g. 'mood match +25'"]
+        H --> I["Append (song, score, reasons)<br/>to scored list"]
+        I --> D
+    end
+
+    D -- No --> J
+
+    subgraph OUTPUT["OUTPUT: The Ranking"]
+        J["Sort scored list by score, descending<br/>(tie-break: energy closeness, then title)"]
+        J --> L["Slice the top K results"]
+        K --> L
+        L --> M["Top K Recommendations<br/>title, artist, score, explanation"]
+    end
