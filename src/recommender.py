@@ -61,16 +61,20 @@ def load_songs(csv_path: str) -> List[Dict]:
             songs.append(row)
     return songs
 
-# Max points per feature from the README's Algorithm Recipe (sums to 100).
-WEIGHTS = {
-    "energy": 30.0,
+# Max points per feature from the README's Algorithm Recipe, with the weight-shift
+# experiment applied: energy doubled (30 -> 60), genre halved (15 -> 7.5).
+# The raw total is 122.5, so each weight is divided by 1.225 to keep scores on a
+# 0-100 scale comparable to the pre-experiment version.
+_RAW_WEIGHTS = {
+    "energy": 60.0,
     "mood": 25.0,
-    "genre": 15.0,
+    "genre": 7.5,
     "valence": 10.0,
     "acousticness": 10.0,
     "danceability": 5.0,
     "tempo": 5.0,
 }
+WEIGHTS = {name: w / 1.225 for name, w in _RAW_WEIGHTS.items()}
 
 def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     """Score one song (0-100) against user preferences and return (score, reasons)."""

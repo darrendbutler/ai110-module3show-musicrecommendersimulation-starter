@@ -184,6 +184,261 @@ Paste a sample of your recommender's output here as a text block so a reader can
       - tempo closeness (+4.1)
 ------------------------------------------------------------
 ```
+## Recommendation Output Comparison
+
+Top 5 results for each profile, from `python src/main.py`:
+
+### Late-Night Study
+
+```
+============================================================
+           TOP RECOMMENDATIONS: Late-Night Study            
+============================================================
+
+#1  Midnight Coding by LoRoom
+    Score: 98.58
+    Reasons:
+      - mood match (+25.0)
+      - genre match (+15.0)
+      - energy closeness (+29.4)
+      - valence closeness (+9.8)
+      - acousticness closeness (+9.6)
+      - danceability closeness (+4.9)
+      - tempo closeness (+4.9)
+------------------------------------------------------------
+
+#2  Library Rain by Paper Lanterns
+    Score: 96.65
+    Reasons:
+      - mood match (+25.0)
+      - genre match (+15.0)
+      - energy closeness (+28.5)
+      - valence closeness (+9.8)
+      - acousticness closeness (+8.9)
+      - danceability closeness (+4.9)
+      - tempo closeness (+4.6)
+------------------------------------------------------------
+
+#3  Spacewalk Thoughts by Orbit Bloom
+    Score: 76.95
+    Reasons:
+      - mood match (+25.0)
+      - energy closeness (+26.4)
+      - valence closeness (+9.3)
+      - acousticness closeness (+8.3)
+      - danceability closeness (+4.1)
+      - tempo closeness (+3.9)
+------------------------------------------------------------
+
+#4  Focus Flow by LoRoom
+    Score: 74.59
+    Reasons:
+      - genre match (+15.0)
+      - energy closeness (+30.0)
+      - valence closeness (+9.9)
+      - acousticness closeness (+9.7)
+      - danceability closeness (+5.0)
+      - tempo closeness (+5.0)
+------------------------------------------------------------
+
+#5  Dust Road Hymn by Hollow Pines
+    Score: 55.99
+    Reasons:
+      - energy closeness (+27.6)
+      - valence closeness (+9.6)
+      - acousticness closeness (+9.9)
+      - danceability closeness (+4.8)
+      - tempo closeness (+4.1)
+------------------------------------------------------------
+```
+
+### High-Energy Pop
+
+```
+============================================================
+            TOP RECOMMENDATIONS: High-Energy Pop            
+============================================================
+
+#1  Sunrise City by Neon Echo
+    Score: 95.85
+    Reasons:
+      - mood match (+25.0)
+      - genre match (+15.0)
+      - energy closeness (+27.6)
+      - valence closeness (+9.9)
+      - acousticness closeness (+9.2)
+      - danceability closeness (+4.7)
+      - tempo closeness (+4.5)
+------------------------------------------------------------
+
+#2  Rooftop Lights by Indigo Parade
+    Score: 77.53
+    Reasons:
+      - mood match (+25.0)
+      - energy closeness (+25.8)
+      - valence closeness (+9.6)
+      - acousticness closeness (+7.5)
+      - danceability closeness (+4.8)
+      - tempo closeness (+4.8)
+------------------------------------------------------------
+
+#3  Gym Hero by Max Pulse
+    Score: 72.44
+    Reasons:
+      - genre match (+15.0)
+      - energy closeness (+29.1)
+      - valence closeness (+9.2)
+      - acousticness closeness (+9.5)
+      - danceability closeness (+4.8)
+      - tempo closeness (+4.8)
+------------------------------------------------------------
+
+#4  Warehouse 4AM by Pulse Theory
+    Score: 58.15
+    Reasons:
+      - energy closeness (+29.7)
+      - valence closeness (+8.8)
+      - acousticness closeness (+9.7)
+      - danceability closeness (+5.0)
+      - tempo closeness (+5.0)
+------------------------------------------------------------
+
+#5  Salsa en la Azotea by Los Faroles
+    Score: 55.48
+    Reasons:
+      - energy closeness (+29.4)
+      - valence closeness (+9.5)
+      - acousticness closeness (+8.3)
+      - danceability closeness (+4.7)
+      - tempo closeness (+3.6)
+------------------------------------------------------------
+```
+
+### Chill Lofi
+
+```
+============================================================
+              TOP RECOMMENDATIONS: Chill Lofi               
+============================================================
+
+#1  Library Rain by Paper Lanterns
+    Score: 97.15
+    Reasons:
+      - mood match (+25.0)
+      - genre match (+15.0)
+      - energy closeness (+28.5)
+      - valence closeness (+9.5)
+      - acousticness closeness (+9.4)
+      - danceability closeness (+4.9)
+      - tempo closeness (+4.9)
+------------------------------------------------------------
+
+#2  Midnight Coding by LoRoom
+    Score: 94.82
+    Reasons:
+      - mood match (+25.0)
+      - genre match (+15.0)
+      - energy closeness (+26.4)
+      - valence closeness (+9.9)
+      - acousticness closeness (+9.1)
+      - danceability closeness (+4.7)
+      - tempo closeness (+4.8)
+------------------------------------------------------------
+
+#3  Spacewalk Thoughts by Orbit Bloom
+    Score: 80.75
+    Reasons:
+      - mood match (+25.0)
+      - energy closeness (+29.4)
+      - valence closeness (+9.0)
+      - acousticness closeness (+8.8)
+      - danceability closeness (+4.3)
+      - tempo closeness (+4.2)
+------------------------------------------------------------
+
+#4  Focus Flow by LoRoom
+    Score: 70.81
+    Reasons:
+      - genre match (+15.0)
+      - energy closeness (+27.0)
+      - valence closeness (+9.6)
+      - acousticness closeness (+9.8)
+      - danceability closeness (+4.8)
+      - tempo closeness (+4.7)
+------------------------------------------------------------
+
+#5  Pine Creek Porch by Wren & Willow
+    Score: 56.75
+    Reasons:
+      - energy closeness (+30.0)
+      - valence closeness (+8.9)
+      - acousticness closeness (+8.7)
+      - danceability closeness (+4.6)
+      - tempo closeness (+4.6)
+------------------------------------------------------------
+```
+
+### Deep Intense Rock
+
+```
+============================================================
+           TOP RECOMMENDATIONS: Deep Intense Rock           
+============================================================
+
+#1  Storm Runner by Voltline
+    Score: 96.65
+    Reasons:
+      - mood match (+25.0)
+      - genre match (+15.0)
+      - energy closeness (+29.7)
+      - valence closeness (+8.7)
+      - acousticness closeness (+9.8)
+      - danceability closeness (+4.2)
+      - tempo closeness (+4.2)
+------------------------------------------------------------
+
+#2  Gym Hero by Max Pulse
+    Score: 77.96
+    Reasons:
+      - mood match (+25.0)
+      - energy closeness (+29.7)
+      - valence closeness (+5.8)
+      - acousticness closeness (+9.7)
+      - danceability closeness (+3.1)
+      - tempo closeness (+4.7)
+------------------------------------------------------------
+
+#3  Iron Requiem by Black Lantern
+    Score: 54.73
+    Reasons:
+      - energy closeness (+28.5)
+      - valence closeness (+8.7)
+      - acousticness closeness (+9.6)
+      - danceability closeness (+4.5)
+      - tempo closeness (+3.4)
+------------------------------------------------------------
+
+#4  Warehouse 4AM by Pulse Theory
+    Score: 52.95
+    Reasons:
+      - energy closeness (+29.1)
+      - valence closeness (+6.2)
+      - acousticness closeness (+9.9)
+      - danceability closeness (+3.3)
+      - tempo closeness (+4.4)
+------------------------------------------------------------
+
+#5  Night Drive Loop by Neon Echo
+    Score: 49.42
+    Reasons:
+      - energy closeness (+24.9)
+      - valence closeness (+8.6)
+      - acousticness closeness (+8.6)
+      - danceability closeness (+3.9)
+      - tempo closeness (+3.5)
+------------------------------------------------------------
+```
+
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
 
